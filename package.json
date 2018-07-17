@@ -1,5 +1,5 @@
 {
-  "name": "react-parcel-starter",
+  "name": "react-mobxstatetree-invoice",
   "version": "1.0.0",
   "description": "Explanation of different approaches in MobX about async/await for fetching data.",
   "main": "index.html",
@@ -59,6 +59,7 @@
     "axios": "^0.18.0",
     "babel-runtime": "^6.26.0",
     "mobx": "^4.0.0",
+    "mobx-devtools-mst": "^0.9.18",
     "mobx-react": "5.0.0",
     "mobx-state-tree": "^3.0.0",
     "normalize.css": "^8.0.0",
