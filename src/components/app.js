@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { observer } from 'mobx-react'
 import PropTypes from 'prop-types'
+import Item from './item'
 
 class App extends Component {
   static propTypes = {
@@ -40,6 +41,11 @@ class App extends Component {
           </label>
           <button type="submit">Add</button>
         </form>
+        <ul>
+          {invoice.itemList.items.map((item, i) => (
+            <Item item={item} key={i} />
+          ))}
+        </ul>
       </div>
     )
   }
