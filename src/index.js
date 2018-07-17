@@ -3,4 +3,8 @@ import ReactDOM from 'react-dom'
 import '../assets/sass/style.scss'
 import App from './components/app'
 
-ReactDOM.render(<App />, document.getElementById('root'))
+import Invoice from './models/invoice'
+
+const invoice = Invoice.create({ currency: 'CAD' })
+
+ReactDOM.render(<App invoice={invoice} />, document.getElementById('root'))
